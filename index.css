@@ -83,6 +83,7 @@ p {
     display: flex;
     align-items: center;
     overflow: hidden;
+    padding-top: 40px;
     z-index: -1;
     justify-content: flex-start;
 }
