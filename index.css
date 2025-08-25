@@ -696,9 +696,6 @@ section {
 /* Desktop styles */
 @media (min-width: 992px) {
 
-    .hero-section {
-        padding-top: 50px;
-    }
 
     .timeline-zigzag {
         padding: 50px;
@@ -762,8 +759,18 @@ section {
 
 /* Mobile-specific adjustments */
 @media (max-width: 767px) {
+
+    .featured {
+        padding: 30px 0;
+    }
+
     .timeline-zigzag::before {
         left: 25px;
+    }
+
+    .hero-section {
+        padding-top: 50px !important;
+        height: auto;
     }
 
     .timeline-zigzag-item {
