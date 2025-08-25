@@ -1053,7 +1053,9 @@ section {
 }
 
 /*  */
-
+.featured-section {
+    overflow: hidden;
+}
 
 .featured-logo {
     object-fit: cover;
@@ -1078,6 +1080,6 @@ section {
 }
 
 .featured-img {
-    background-color: var(--primary-color-light);
+    background-color: #F5E7D6;
 
 }
