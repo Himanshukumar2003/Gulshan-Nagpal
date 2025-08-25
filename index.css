@@ -1083,3 +1083,77 @@ section {
     background-color: #F5E7D6;
 
 }
+
+/* Responsive Timeline */
+@media (max-width: 991px) {
+    .timeline-zigzag::before {
+        left: 20px;
+        /* line shift left */
+    }
+
+    .timeline-zigzag-item {
+        width: 100%;
+        padding-left: 50px !important;
+        padding-right: 0 !important;
+        margin-bottom: 40px;
+    }
+
+    .timeline-zigzag-item.left,
+    .timeline-zigzag-item.right {
+        left: 0;
+    }
+
+    .timeline-zigzag-item.right .timeline-zigzag-icon,
+    .timeline-zigzag-item.left .timeline-zigzag-icon {
+        left: -70px;
+        right: auto;
+    }
+
+    .timeline-zigzag-item.right .category-badge,
+    .timeline-zigzag-item.left .category-badge {
+        right: auto;
+        left: 80px;
+        top: -10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-zigzag::before {
+        left: 10px;
+    }
+
+    .timeline-zigzag-item {
+        padding-left: 40px !important;
+    }
+
+    .timeline-zigzag-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        left: -60px !important;
+    }
+
+    .timeline-zigzag-content {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .timeline-zigzag-year {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .timeline-zigzag-content h4 {
+        font-size: 18px;
+    }
+
+    .timeline-zigzag-content p {
+        font-size: 14px;
+    }
+
+    .category-badge {
+        font-size: 10px;
+        padding: 4px 10px;
+        left: 70px;
+    }
+}
